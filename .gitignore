@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+.pytest_cache/
+
+# Virtual environment
+.venv/
+
+# IDE/editor
+.vscode/
+
+test_exam_classification.py
+
+# Models and generated files
+model/
+*.pyc
+model_test.py
+
+# Ignore PDFs and temporary files
+*.pdf
+sample.txt
+*.txt
+
+# Ignore test output files if any
+*.log
+__pycache__/
+node_modules/
+*.pyc
