@@ -1,0 +1,24 @@
+.meResetButton{
+    background-color: #F2F2F2;
+    position: absolute;
+    margin-left: 5.5%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5%;
+    height: 70%;
+}
+
+.meResetButton:hover{
+    border-color: #F2F2F2;
+}
+
+/*question and marks labels*/
+.qLabel1{
+    margin-left: 13.5%;
+}
+
+.mLabel1{
+    margin-left: 58%;
+}

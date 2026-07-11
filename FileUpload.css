@@ -1,0 +1,348 @@
+.fu-lightgrey-container{
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 88.5px;
+    left: 50px;
+    right: 50px;
+    max-width: 1440px;
+    height: auto;
+    min-height: 180px;
+    bottom: 30px;
+    border-radius: 8px;
+}
+
+.resultsScreen{
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    right: 50px;
+    max-width: 1440px;
+    height: auto;
+    min-height: 180px;
+    bottom: 50px;
+    border-radius: 8px;
+}
+
+.resultsScreen h2{
+    color: black;
+}
+
+.fuHeader{
+    background-color: #F2F2F2;
+    position: absolute;
+    text-align: center;
+    padding: 0% 5%;
+    font-size: 0.75vw;
+    color: black;
+
+    margin-left: 33.25%;
+    margin-top: 4.5%;
+}
+
+.fuCloudSymbol{
+    width: 10%;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+.chooseFileButton{
+    background-color: #D9D9D9;
+    box-shadow: 0px 4px 8px #3C3C3C;
+    width: 50%;
+    height: 50%;
+    margin-top: 15%;
+    margin-left: 25%;
+    border-radius: 12px;
+
+    font-size: 0.65vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chooseFileButton h2{
+    color: rgb(57, 57, 57);
+    margin-top: 0%;
+}
+
+.newFileUploadButton{
+    padding: 2% 5%;
+    border: 1px solid black;
+    border-radius: 100px;
+    background-color: #F2F2F2;
+    color: black;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newFileUploadButton:hover{
+    background-color:#f2f2f2ca;
+    border-color: #000000;
+}
+
+.chooseFileButton input[type="file"]{
+    display: none;
+}
+
+.afterSelected{
+    background-color: #D9D9D9;
+    box-shadow: 0px 4px 8px #3C3C3C;
+    width: 50%;
+    height: 50%;
+    margin-top: 15%;
+    margin-left: 25%;
+    border-radius: 12px;
+    font-size: 1vw;
+    position: relative;
+}
+
+.afterSelected h3{
+    margin-left: 45%;
+    margin-top: 5%;
+}
+
+.fileAndSymbol{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.fuFileSymbol{
+    width: 8%;
+    margin-top: 12.5%;
+    margin-left: 25%;
+}
+
+.afterSelected h2{
+    margin-top: 16%;
+}
+
+.fuNextButton{
+    padding: 2% 5%;
+    border: 1px solid black;
+    border-radius: 100px;
+    background-color: #F2F2F2;
+    color: black;
+    font-size: 1vw;
+    margin-top: 4%;
+    margin-left: 43%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fuNextButton:hover{
+    background-color:#f2f2f2ca;
+    border-color: #000000;
+}
+
+.fuNextButton:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.fuCloudSymbol2{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 88%;
+    width: 10%;
+}
+
+/*Error overlay*/
+.errorModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.errorModal {
+    background-color: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from { 
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to { 
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.errorModalHeader {
+    display: flex;
+    align-items: center;
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.errorIcon {
+    font-size: 24px;
+    margin-right: 12px;
+    color: #ff6b35;
+}
+
+.errorModalHeader h2 {
+    color: #333;
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: 600;
+    flex-grow: 1;
+}
+
+.closeButton {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.closeButton:hover {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.errorModalBody {
+    padding: 20px 24px;
+}
+
+.errorMessage {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+.suggestions {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    padding: 16px 20px;
+    border-radius: 4px;
+}
+
+.suggestions h4 {
+    color: #333;
+    margin: 0 0 12px 0;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.suggestions ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.suggestions li {
+    color: #555;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+.errorModalFooter {
+    padding: 16px 24px 24px;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.retryButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.retryButton:hover {
+    background-color: #0056b3;
+}
+
+.closeModalButton {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.closeModalButton:hover {
+    background-color: #545b62;
+}
+
+@media (max-width: 768px) {
+    .errorModal {
+        width: 95%;
+        margin: 20px;
+    }
+    
+    .errorModalHeader {
+        padding: 16px 20px 12px;
+    }
+    
+    .errorModalBody {
+        padding: 16px 20px;
+    }
+    
+    .errorModalFooter {
+        padding: 12px 20px 20px;
+        flex-direction: column;
+    }
+    
+    .retryButton, .closeModalButton {
+        width: 100%;
+        justify-self: stretch;
+    }
+    
+    .fuHeader {
+        font-size: 1em;
+    }
+    
+    .chooseFileButton, .afterSelected {
+        width: 80%;
+        margin-left: 10%;
+    }
+}

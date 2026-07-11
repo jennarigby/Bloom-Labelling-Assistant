@@ -1,0 +1,602 @@
+/*Heading, file name, export button*/
+.adHeader{
+    background-color: #F2F2F2;
+    width: 96.5%;
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    height: 7%;
+}
+
+.adHeader h1{
+    color: black;
+    position: absolute;
+    margin-top: 0%;
+    font-size: 1.75vw;
+    
+}
+
+.adHeader h2{
+    height: 25%;
+    color: rgb(56, 55, 55);
+    margin-left: 32.5%;
+    width: 200%;
+    font-size: 1.15vw;
+    margin-top: 0.75%;
+}
+
+.exportButton{
+    background-color:#3C3C3C;
+    width: 20%;
+    font-size: 1vw;
+    color: white;
+    border-radius: 100px;
+    margin-bottom: 10%;
+    margin-left: 120%;
+}
+
+/*Actual analytics portion of page*/
+.mainAnalytics{
+    display: grid;
+    grid-template-columns: 27.5% 68.5%;
+    margin-top: 5%;
+    margin-left: 2%;
+    gap: 2.5%;
+    height: 85%;
+    color: black;
+    font-size: 1vw;
+}
+
+/*Left*/
+.distributionsBar{
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px #888888;
+    height: 98%;
+}
+
+.distributionsBar h3{
+    margin-left: 5%;
+    margin-top: 4.5%;
+}
+
+.distributionsBar h4{
+    margin-left: 2%;
+    margin-top: 0.5%;
+}
+
+/*Right*/
+.labelledQuestionsBox{
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px #888888;
+    height: 98%;
+}
+
+.labelledQuestionsBox h3{
+    margin-left: 2.5%;
+    margin-bottom: 0.5%;
+}
+
+/*Distribution box header with buttons*/
+.distributionHeader{
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 55.5% 20% 20%;
+    gap: 1.5%;
+    height: 9%;
+}
+
+.currentButton{
+    background-color: #dfdede;
+    height: 50%;
+    margin-top: 12.5%;
+    padding: 1% 1%;
+}
+
+.currentButton:hover{
+    border-color: black;
+}
+
+.currentButton:focus{
+    background-color: #989898;
+}
+
+.goalButton{
+    background-color: #dfdede;
+    height: 50%;
+    margin-top: 12.5%;
+    padding: 1% 1%;
+}
+
+.goalButton:hover{
+    border-color: black;
+}
+
+/*Right question view with scrollable questions*/
+.analyticsScroll{
+    overflow-y: auto;
+    position: absolute;
+    width: 65.75%;
+    margin-left: 1.25%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    scrollbar-width: auto;
+    font-size: 1vw;
+    color: black;
+}
+
+.analyticsQuestionIDBox{
+    color: white;
+    background-color: #3C3C3C;
+    border-radius: 8px;
+    width: 82%;
+    height: 47.5%;
+    margin-left: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.75vw;
+}
+
+.analyticsRow{
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 8px #818181;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 5.5% 85% 9%;
+    align-items: center;
+    min-height: 20%;
+    cursor: pointer;
+}
+
+.questionMarks{
+    font-size: 0.75vw;
+    position: absolute;
+    margin-left: 75%;
+}
+
+.questionTab{
+    border-radius: 8px;
+    width: 100%;
+    margin-left: 0.75%;
+    height: 70%;
+    margin-bottom: 1.25%;
+}
+
+.questionText{
+    margin-left: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.2;
+    max-height: 2.4em;
+    word-wrap: break-word;
+    margin-bottom: 1%;
+}
+
+/*Question labels for scroll and edit overlay*/
+.questionLabel{
+    background-color: #F9F8C6;
+    color: #827914;
+    box-shadow: 0px 4px 8px #d1d1d1;
+    width: 18%;
+    text-align: center;
+    border-radius: 100px;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 3.75%;
+}
+
+.questionLabel.Remember {
+    background-color: #F9F8C6;
+    color: #827914;
+    box-shadow: 0px 4px 8px #d1d1d1;
+    width: 18%;
+    text-align: center;
+    border-radius: 100px;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+}
+
+.questionLabel.Understand{
+    background-color: #DDD6FE;
+    color: #6129B8;
+    box-shadow: 0px 4px 8px #d1d1d1;
+    width: 18%;
+    text-align: center;
+    border-radius: 100px;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+}
+
+.questionLabel.Apply{
+    background-color: #FDBDBE;
+    color: #B8292B;
+    box-shadow: 0px 4px 8px #d1d1d1;
+    width: 18%;
+    text-align: center;
+    border-radius: 100px;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+}
+
+.questionLabel.Analyze{
+    background-color: #FDE5B9;
+    color: #885605;
+    box-shadow: 0px 4px 8px #d1d1d1;
+    width: 18%;
+    text-align: center;
+    border-radius: 100px;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+}
+
+.questionLabel.Evaluate{
+    background-color: #E7FCBB;
+    color: #0E8805;
+    box-shadow: 0px 4px 8px #d1d1d1;
+    width: 18%;
+    text-align: center;
+    border-radius: 100px;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+}
+
+.questionLabel.Create{
+    background-color: #D5EDFF;
+    color: #056C88;
+    box-shadow: 0px 4px 8px #d1d1d1;
+    width: 18%;
+    text-align: center;
+    border-radius: 100px;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+}
+
+.editLabel{
+    background-color: #F2F2F2;
+    width: 70%;
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 10% 10%;
+}
+
+.editLabelButton{
+    width: 80%;
+    height: 50%;
+}
+
+.editLabel:hover{
+    border-color: black;
+}
+
+/*Pie chart*/
+.pieChartSection{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 38%;
+    border-radius: 8px;
+    margin-left: 10%;
+}
+
+
+/*Warnings*/
+.warning{
+    display: flex;
+    justify-content: center;
+    width: 4%;
+    position: relative;
+    margin-left: 2.5%;
+    height: 30%;
+}
+
+.warningSymbol{
+    margin-top: 5%;
+    width: 100%;
+    height: 80%;
+}
+
+.orangeWarning{
+    display: flex;
+    justify-content: center;
+    width: 5%;
+    position: relative;
+    margin-left: 2.25%;
+    height: 80%;
+}
+
+.orangeWarningSymbol{
+    margin-top: 3%;
+    width: 100%;
+    height: 8%;
+}
+
+.questionLabelContainer{
+    display: flex;
+}
+
+/*Edit overlay*/
+.editOverlayBox{
+    background-color: #3C3C3C;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 19%;
+    left: 14%;
+    width: 70%;
+    height: 70%;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px #888888;
+}
+
+.editHeader{
+    height: 12%;
+    display: flex;
+    gap: 84%;
+    margin-left: 3%;
+    margin-top: 2.5%;
+}
+
+.editClose{
+    background-color: #3C3C3C;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.editClose:hover{
+    border-color: #3C3C3C;
+}
+
+.questionAndID{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.questionToEditBox{
+    background-color: #FFFFFF;
+    color: black;
+    width: 90%;
+    height: 90%;
+    border-radius: 8px;
+    font-size: 0.8vw;
+}
+
+.questionToEditBox h3{
+    margin-left: 3%;
+}
+
+.editQuestionIDBox{
+    background-color: #252525;
+    color: white;
+    border-radius: 8px;
+    width: 45%;
+    height: 80%;
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.75vw;
+}
+
+.labelsOriginalNew{
+    display: grid;
+    grid-template-columns: 65% 20%;
+    width: 50%;
+    font-size: 0.75vw;
+    margin-left: 30%;
+    margin-top: 1%;
+}
+
+.originalLabel{
+    width: 12.5%;
+    height: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 27%;
+    border-radius: 8px;
+}
+
+.originalLabel.Remember{
+    background-color: #F9F8C6;
+    color: #827914;
+}
+
+.originalLabel.Understand{
+    background-color: #DDD6FE;
+    color: #6129B8;
+}
+
+.originalLabel.Apply{
+    background-color: #FDBDBE;
+    color: #B8292B;
+}
+
+.originalLabel.Analyze{
+    background-color: #FDE5B9;
+    color: #885605;
+}
+
+.originalLabel.Evaluate{
+    background-color: #E7FCBB;
+    color: #0E8805;
+}
+
+.originalLabel.Create{
+    background-color: #D5EDFF;
+    color: #056C88;
+}
+
+.categoryLabels{ 
+    height: 7.5%;
+    display: flex;
+    align-items: center;
+    gap: 6.5%;
+}
+
+.label-select{
+    padding: 10% 18%;
+    border-radius: 8px;
+    font-size: 1vw;
+    text-align: center;
+    
+}
+
+.label-select option[value="Remember"]{
+    background-color: #F9F8C6;
+}
+
+.label-select.Remember{
+    background-color: #F9F8C6;
+}
+
+.label-select option[value="Understand"]{
+    background-color: #DDD6FE;
+}
+
+.label-select.Understand{
+    background-color: #DDD6FE;
+}
+
+.label-select option[value="Apply"]{
+    background-color: #FDBDBE;
+}
+
+.label-select.Apply{
+    background-color: #FDBDBE;
+}
+
+.label-select option[value="Analyze"]{
+    background-color: #FDE5B9;
+}
+
+.label-select.Analyze{
+    background-color: #FDE5B9;
+}
+
+.label-select option[value="Evaluate"]{
+    background-color: #E7FCBB;
+}
+
+.label-select.Evaluate{
+    background-color: #E7FCBB;
+}
+
+.label-select option[value="Create"]{
+    background-color: #D5EDFF;
+}
+
+.label-select.Create{
+    background-color: #D5EDFF;
+}
+
+.editFooter{
+    position: absolute;
+    bottom: 20px;
+    height: 10%;
+    width: 100%;
+}
+
+.editConfirm{
+    height: 100%;
+    margin-left: 85%;
+    width: 12.5%;
+    border-radius: 100px;
+}
+
+/*Bottom half of left distributions box*/
+.distributionBarRow{
+    margin-left: 2%;
+    margin-right: 10%;
+}
+
+.distributionBar{
+    border-radius: 8px;
+    color: white;
+    padding: 1% 1.5%;
+}
+
+.distributionBars{
+    margin-top:2.5%;
+}
+
+.eachBar{
+    display: grid;
+    grid-template-columns: 25% 80%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.totalQuestions{
+    font-size: 1vw;
+    display: grid;
+    grid-template-columns: 50% 45%;
+    margin-left: 5%;
+}
+
+/*Bar graph*/
+.BarGraphSection{
+    text-align: center;
+}
+
+/*Bottom half of goal tab*/
+.actionsToBeTaken{
+    margin-top: -6.5%;
+    padding: 2% 4%;
+    height: 40%;
+    width: 80%;
+    margin-left: 6%;
+}
+
+.actionsToBeTaken h4{
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.actionRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 5%;
+    margin-bottom: 1.75%;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+}
+
+/*After label has been changed*/
+.edited_label{
+    display: flex;
+    justify-content: center;
+}
+
+.edit_label_symbol{
+    position: relative;
+    top: 17%;
+    height: 55%;
+}

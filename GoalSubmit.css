@@ -1,0 +1,295 @@
+.gs-lightgrey-container{
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 102px;
+    left: 50px;
+    right: 50px;
+    max-width: 1440px;
+    height: auto;
+    min-height: 180px;
+    bottom: 50px;
+    border-radius: 8px;
+
+}
+
+.gsHeader{
+    background-color: #F2F2F2;
+    position: absolute;
+    margin-top: 0px;
+    width: 100%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    font-size: 0.75vw;
+    color: black;
+    border-radius: 8px;
+}
+
+.gsHeader h1{
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 35%;
+}
+
+.gsHeader h3{
+    position: absolute;
+    margin-top: 5.75%;
+    margin-left: 35.5%;
+}
+
+.scrollableParent{
+    position: absolute;
+    margin-top: 8.25%;
+    overflow-y: auto;
+    width: 90%;
+    height: 63.5%;;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: auto;
+    gap: 25px;
+    text-align: center;
+    font-size: 1.25vw;
+    color: black;
+}
+
+/*Colour circle*/
+.labelBackdrop{
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 8px #888888;
+    border-radius: 100px;
+    width: 60%;
+    height: 22.5%;
+    margin-left: 20%;
+    margin-top: 2.5%;
+    display: flex;
+    align-items: center;
+}
+
+.labelBackdrop h3{ 
+    margin-left: 39%;
+}
+
+/*Input*/
+.sliderAndBox{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.rangeSlider input[type='range']{
+    margin-top: 6%;
+    margin-left: 12%;
+    -webkit-appearance: none;
+    height: 12px;
+    width: 90%;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.textInputBox input[type='text']{
+    width: 40%;
+    height: 45%;
+    border-radius: 10px;
+    margin-top: 18%;
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+.sliderAndBox h3{
+    margin-top: 18%;
+}
+
+/*Various category boxes*/
+.remember{
+    background-color: #D9D9D9;
+    width: 70%;
+    height: 40%;
+    margin-left: 15%;
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 8px #888888;
+}
+
+.rememberLabel{
+    background-color: rgb(252, 205, 63);
+    border-radius: 100px;
+    width: 2.25%;
+    height: 6.75%;
+    position: absolute;
+    margin-left: 0.75%;
+    margin-top: 0.125%;
+}
+
+.understand{
+    background-color: #D9D9D9;
+    width: 70%;
+    height: 40%;
+    margin-left: 15%;
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 8px #888888;
+}
+
+.understandLabel{
+    background-color: rgb(195, 39, 75);
+    border-radius: 100px;
+    width: 2.25%;
+    height: 6.75%;
+    position: absolute;
+    margin-left: 0.75%;
+    margin-top: 0.125%;
+}
+
+.apply{
+    background-color: #D9D9D9;
+    width: 70%;
+    height: 40%;
+    margin-left: 15%;
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 8px #888888;
+}
+
+.applyLabel{
+    background-color: rgb(220, 124, 249);
+    border-radius: 100px;
+    width: 2.25%;
+    height: 6.75%;
+    position: absolute;
+    margin-left: 0.75%;
+    margin-top: 0.125%;
+}
+
+.analyze{
+    background-color: #D9D9D9;
+    width: 70%;
+    height: 40%;
+    margin-left: 15%;
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 8px #888888;
+}
+
+.analyzeLabel{
+    background-color: rgb(252, 151, 63);
+    border-radius: 100px;
+    width: 2.25%;
+    height: 6.75%;
+    position: absolute;
+    margin-left: 0.75%;
+    margin-top: 0.125%;
+}
+
+.evaluate{
+    background-color: #D9D9D9;
+    width: 70%;
+    height: 40%;
+    margin-left: 15%;
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 8px #888888;
+}
+
+.evaluateLabel{
+    background-color: rgb(148, 216, 116);
+    border-radius: 100px;
+    width: 2.25%;
+    height: 6.75%;
+    position: absolute;
+    margin-left: 0.75%;
+    margin-top: 0.125%;
+}
+
+.create{
+    background-color: #D9D9D9;
+    width: 70%;
+    height: 40%;
+    margin-left: 15%;
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 8px #888888;
+}
+
+.createLabel{
+    background-color: rgb(89, 153, 199);
+    border-radius: 100px;
+    width: 2.25%;
+    height: 6.75%;
+    position: absolute;
+    margin-left: 0.75%;
+    margin-top: 0.125%;
+}
+
+/*Footer*/
+.meFooter h2{
+    color: red;
+    margin-left: 67%;
+    margin-top: 2.2%;
+    font-size: 1.2vw;
+}
+
+.gsFooter{
+    position: absolute;
+    bottom: 0%;
+    max-width: 1440px;
+    width: 100%;
+    height: 15.5%;;
+    box-shadow: 0px 4px 8px #3C3C3C;
+    display: flex;
+}
+
+.gsFooter h4{
+    position: absolute;
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+
+/*Preset recommendations*/
+.firstYear{
+    border-color: black;
+    background-color: #F2F2F2;
+    width: 7.5%;
+    height: 50%;
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 0.75vw;
+}
+
+.firstYear:hover{
+    background-color: #D9D9D9;
+    border-color: black;
+}
+
+.secondYear{
+    border-color: black;
+    background-color: #F2F2F2;
+    width: 7.5%;
+    height: 50%;
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    font-size: 0.75vw;
+}
+
+.secondYear:hover{
+    background-color: #D9D9D9;
+    border-color: black;
+}
+
+.thirdYear{
+    border-color: black;
+    background-color: #F2F2F2;
+    width: 7.5%;
+    height: 50%;
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    font-size: 0.75vw;
+}
+
+.thirdYear:hover{
+    background-color: #D9D9D9;
+    border-color: black;
+}

@@ -1,0 +1,119 @@
+.about-lightgrey-container{
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    right: 50px;
+    max-width: 1440px;
+    height: auto;
+    min-height: 180px;
+    bottom: 50px;
+    border-radius: 8px;
+
+}
+
+.abtHeader{
+    display: grid;
+    grid-template-columns: 8% 84% 8%;
+}
+
+.BackButton{
+    background-color: #F2F2F2;
+    width: 80%;
+    margin-top: 30%;
+    margin-left: 20%;
+}
+
+.BackSymbol{
+    width: 50%;
+    max-width: 40px;
+    min-width: 20px;
+    height:auto;
+    position: relative;
+}
+
+.BackButton:hover{
+    border-color: #F2F2F2;
+}
+
+.inner{
+    margin-top: 4.5%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 2% 2%;
+    align-items: center;
+}
+
+.about-lightgrey-container h1{
+    color: black;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 2.75vw;
+}
+
+.inner h2{
+    color: black;
+    padding: 2.75%;
+    text-align: center;
+    margin-top: 0%;
+    font-size: 1.5vw;
+}
+
+.inner p{
+    color: black;
+    padding: 0.5%;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.pyramidGraphic{
+    width: 70%;
+    max-width: 500px;
+    max-height: 300px;
+    height: auto;
+    position: relative;
+}
+
+/*Navigation bar*/
+.smallLogo{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.aboutButton{
+    padding: 1% 1%;
+    font-size: 1.0vw;
+    background-color: #252525;
+    color: white;
+    border-radius: 100px;
+    position: absolute;
+    top: 4%;
+    right: 3%;
+}
+
+.aboutButton:hover{
+    background-color: #f2f2f2df;
+    border-color: #F2F2F2;
+    color: #000000;
+}
+
+.userManualButton{
+    padding: 1% 1%;
+    font-size: 1.0vw;
+    margin-top: 0%;
+    background-color: #252525;
+    color: white;
+    border-radius: 100px;
+    position: absolute;
+    top: 4%;
+    right: 10.25%;
+}
+
+.userManualButton:hover{
+    background-color: #f2f2f2df;
+    border-color: #F2F2F2;
+    color: #000000;
+}

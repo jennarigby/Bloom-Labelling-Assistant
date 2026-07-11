@@ -1,0 +1,95 @@
+/*Overall*/
+.ce-lightgrey-container{
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    right: 50px;
+    max-width: 1440px;
+    height: auto;
+    min-height: 180px;
+    bottom: 50px;
+    border-radius: 8px;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    margin-top: 6.5%;
+}
+
+.ceHeader{
+    height: 5%;
+    text-align: center;
+    padding: 2% 2%;
+    font-size: 0.7vw;
+    color: black;
+    border-radius: 8px;
+}
+
+.ceBackButton{
+    position: absolute;
+    width: 8%;
+    background-color: #F2F2F2;
+    margin-left: 0%;
+    margin-top: 1%;
+}
+
+.ceBackButton:hover{
+    border-color: #F2F2F2;
+}
+
+/*File option*/
+.fileUpload{
+    background-color: #D9D9D9;
+    box-shadow: 0px 4px 8px #3C3C3C;
+    width: 75%;
+    max-width: 450px;
+    margin-left: 7.5%;
+    border-radius: 15px;
+    font-size: 1vw;
+
+}
+
+.fileUpload h4{
+    padding: 2% 2%;
+}
+
+.fileUpload:hover{
+    border-color: black;
+}
+
+.ceFileSymbol{
+    margin-top: 7.5%;
+    width: 15%;
+    height: auto;
+    max-width: 100px;
+}
+
+/*Question option*/
+.enterQuestion{
+    background-color: #D9D9D9;
+    box-shadow: 0px 4px 8px #3C3C3C;
+    width: 75%;
+    max-width: 450px;
+    margin-left: 0%;
+    margin-right: 8%;
+    border-radius: 15px;
+    font-size: 1vw;
+}
+
+.enterQuestion:hover{
+    border-color:black;
+}
+
+.enterQuestion h4{
+    padding: 2% 2%;
+}
+
+.cePencilSymbol{
+    margin-top: 7.5%;
+    width: 15%;
+    height: auto;
+    max-width: 100px;
+}

@@ -1,0 +1,99 @@
+.um-lightgrey-container{
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    right: 50px;
+    max-width: 1440px;
+    height: auto;
+    min-height: 180px;
+    bottom: 50px;
+    border-radius: 8px;
+}
+
+.umHeader{
+    display: grid;
+    grid-template-columns: 8% 84% 8%;
+}
+
+.umColumnHeaders{
+    max-height: 70px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    font-size: 0.75vw;
+    color: black;
+}
+
+.umColumnHeaders h1{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.umDescriptors{
+    display: grid;
+    margin-top: 0%;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    font-size: 1.0vw;
+    color: black;
+}
+
+.umDescriptors h4{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.umInstructions {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    font-size: 0.85vw;
+}
+
+.umInstructions h2{
+    padding: 0% 5%;
+    color: black;
+}
+
+.submitFile {
+    margin-top: 2%;
+    background-color: #D9D9D9;
+    box-shadow: 0px 4px 8px #3C3C3C;
+    max-width: 70%;
+    margin-left: 14%;
+    border-radius: 15px;
+    position: relative;
+}
+
+.umFileSymbol{
+    position: absolute;
+    max-width: 55px;
+    width: 15%;
+    height: auto;
+    top: 5%;
+    right: 5%;
+}
+
+.manualEntry{
+    background-color: #D9D9D9;
+    box-shadow: 0px 4px 8px #3C3C3C;
+    margin-top: 2%;
+    max-width: 70%;
+    margin-left: 14%;
+    border-radius: 15px;
+    position: relative;
+}
+
+.manualEntry h2{
+    margin-top: 7.5%;
+}
+
+.umPencilSymbol{
+    position: absolute;
+    max-width: 55px;
+    width: 15%;
+    height: auto;
+    top: 5%;
+    right: 5%;
+}
