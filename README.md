@@ -31,8 +31,7 @@ The recommended system requirements are at least 8GB of RAM, 256GB of storage an
 
 A stable internet connection is necessary for the following steps.
 
-To begin, clone the repository by typing:  
-“git clone https://gitlab.cs.uct.ac.za/latebloomers/capstone1.git”
+To begin, clone the repository.
 
 Next, navigate to the directory of the cloned repository and create a virtual environment by typing “python -m venv .venv” in the terminal of the project. After this, activate the virtual environment by typing “.\.venv\Scripts\Activate.ps1” in Windows powershell or “source .venv/bin/activate” if using  MAC or Linux. After the virtual environment has been activated, install the necessary python dependencies by typing “uv pip install -r uv.lock”.
 
