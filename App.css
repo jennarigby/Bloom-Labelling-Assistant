@@ -1,0 +1,13 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #252525;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App{
+  min-height: 100vh;
+}
