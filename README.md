@@ -1,16 +1,10 @@
-# Bloom Labelling Assistant: LateBloomers
+# Bloom Labelling Assistant
 
+## Student Names 
 
-
-## Link to GitLab Repo
-
-https://gitlab.cs.uct.ac.za/latebloomers/capstone1 
-
-## Student Names and Numbers
-
-Jenna Rigby: RGBJEN001  
-Joshua Diegaardt: DGRJOS001  
-Aqeelah Ismail: ISMAQE003
+Jenna Rigby,
+Joshua Diegaardt,
+Aqeelah Ismail
 
 ## User Manual
 
